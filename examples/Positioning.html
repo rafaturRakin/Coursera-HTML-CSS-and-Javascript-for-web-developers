@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Box Model and Float</title>
+	<style>
+		*{
+			box-sizing: border-box;
+			background: mintcream;
+		}
+		h1 {
+			text-align: center;
+			color: darkorchid;
+		}
+		div > div {
+			height: 50px;
+			width: 50px;
+			margin: 15px;
+		}
+		#container1{
+			position: relative;
+			background: lightgoldenrodyellow;
+		}
+		#container1 > div:nth-child(2) {
+			position: relative;
+			left: 20px;
+			top: 10px;
+		}
+		#container2{
+			background: lightpink;
+		}
+		#container2 > div:nth-child(2) {
+			position: absolute;
+			left: 150px;
+			top: 100px;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Welcome to my Page</h1>
+	<div id="container1">
+		<div style="background: yellow;">Item1</div>
+		<div style="background: lightblue;">Item2</div>
+		<div style="background: lavender;">Item3</div>
+	</div>
+
+	<div id="container2">
+		<div style="background: lightcyan;">Item4</div>
+		<div style="background: lightsalmon;">Item5</div>
+		<div style="background: lightseagreen;">Item6</div>	
+	</div>
+</body>
+</html>
